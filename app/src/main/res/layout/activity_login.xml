@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Beige"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    tools:context=".Login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <ImageView
+            android:contentDescription="Logo"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:labelFor="@+id/username"
+            android:text="Enter Username" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:inputType="text"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:contentDescription="Username goes here"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:layout_height="48dp"
+            android:background="@drawable/textbox"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:labelFor="@id/password"
+            android:text="Enter Password"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:contentDescription="Password goes here"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/textbox"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginbtn"
+            android:textColor="@color/white"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="30dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:background="@drawable/buttons"/>
+        <ImageView
+            android:id="@+id/loadingImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/rpaw"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="end"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Don’t have an account?" />
+            <TextView
+                android:id="@+id/sign_text"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:clickable="true"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Sign Up"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

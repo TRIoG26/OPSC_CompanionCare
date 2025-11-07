@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Beige"
+    android:orientation="vertical"
+    tools:context=".Welcome"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingHorizontal="40dp">
+    <ImageView
+        android:layout_width="122dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginBottom="29dp"
+        android:src="@drawable/logo"
+        android:elevation="10dp"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Welcome to CompanionCare"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="27dp"
+        android:layout_weight="1"
+        android:text="Thank you for registering on our App!\nWe at CompanionCare promise to give to \nluxury experience!"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextbtn"
+            android:textColor="@color/white"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:background="@drawable/buttons"/>
+    </LinearLayout>
+
+</LinearLayout>

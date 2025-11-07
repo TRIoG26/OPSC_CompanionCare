@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OPSC_CompanionCare</string>
+    <string name="select_language">Khetha Ulimi</string>
+    <string name="enter_username">Faka Igama lomsebenzisi</string>
+    <string name="enter_password">Faka Iphasiwedi</string>
+    <string name="create_an_account">Igama</string>
+    <string name="create_username">Dala Igama lomsebenzisi</string>
+    <string name="create_password">Akha I-password</string>
+    <string name="email">I-imeyili</string>
+    <string name="text1">Ngokubhalisa, uyavuma ukusebenzisa uhlelo lokusebenza ukwenza ibhajethi yomuntu siqu. Singase siqoqe futhi sivikele idatha yakho. Ukusebenzisa kabi kungase kuholele ekumisweni kwe-akhawunti. Bheka Inqubomgomo Yobumfihlo ukuze uthole imininingwane.</string>
+    <string name="text2">Siyabonga ngokubhalisa ku-App yethu! Thina kwa-CompanionCare sithembisa ukunikeza isipiliyoni sokunethezeka!</string>
+    <string name="text3">Usuzosusa i-akhawunti yakho uqinisekile ukuthi ufuna ukuyisusa?</string>
+    <string name="text4">"Ngiyavumelana neMigomo Nemibandela "</string>
+    <string name="continuebtn">Qhubeka</string>
+    <string name="next">Emva Kwalokho</string>
+    <string name="profile">Iphrofayela</string>
+    <string name="pet_profile">"Iphrofayela Yezilwane Ezifuywayo "</string>
+    <string name="edit_profile">"Hlela iphrofayela "</string>
+    <string name="main">Ulwazi Oluyinhloko</string>
+    <string name="breed">Zalisa</string>
+    <string name="sex">Ucansi</string>
+    <string name="date1">Usuku lokuzalwa</string>
+    <string name="date2">Idethi Enikeziwe</string>
+    <string name="date3">Usuku Lokuvakasha</string>
+    <string name="date4">Idethi Yokugcina Elandelayo</string>
+    <string name="colour">Umbala</string>
+    <string name="text5">Awunayo i-akhawunti?</string>
+    <string name="login">Ngena Ngemvume</string>
+    <string name="signup">Bhalisela</string>
+    <string name="chipping">" I-Chipping"</string>
+    <string name="save">Qongelela</string>
+    <string name="language">Ulimi</string>
+    <string name="phoneno">Inombolo Yocingo</string>
+    <string name="mircono">Inombolo ye-Microchip</string>
+    <string name="datemirco">Usuku Lwe-Microchipping</string>
+    <string name="pet_name">Igama lesilwane</string>
+    <string name="male">Owesilisa</string>
+    <string name="female">Esifazane</string>
+    <string name="history_type">Uhlobo lomlando</string>
+    <string name="account_deleted">"Ukususwa Kwe-Akhawunti "</string>
+    <string name="vaccination">Ukugoma</string>
+    <string name="cancel">Khansela</string>
+    <string name="vet_name">Igama leVet</string>
+    <string name="veterinarian_name">Igama likadokotela wezilwane</string>
+    <string name="notes">Amanothi</string>
+    <string name="reason">Isizathu Sokuvakashela</string>
+    <string name="diagnosis">Ukuxilongwa</string>
+    <string name="treatment">Ukwelashwa</string>
+    <string name="followup">"Idethi ye-aphoyintimenti yokulandelela "</string>
+    <string name="edit_pet_profile">"Hlela amaphrofayili ezilwane ezifuywayo "</string>
+    <string name="history">Umlando</string>
+    <string name="delete_account">"Susa i-akhawunti "</string>
+    <string name="setting">Izilungiselelo</string>
+    <string name="delete">Susa</string>
+    <string name="search">Ukufuna</string>
+    <string name="category">Isigaba</string>
+    <string name="health_records">Amarekhodi Ezempilo</string>
+    <string name="vaccines">Imijovo</string>
+    <string name="vet_visits">Ukuvakashela Kudokotela Wezilwane</string>
+    <string name="diet_tracking">Ukulandelela Ukudla</string>
+    <string name="grooming">Ukuzilungisa</string>
+    <string name="toys">Amathoyizi</string>
+    <string name="pet_food">Ukudla Kwezilwane Ezifuywayo</string>
+
+
+</resources>

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/parchment">
+    <ImageView
+        android:id="@+id/petImageView"
+        android:layout_width="match_parent"
+        android:layout_height="610dp"
+        android:layout_marginBottom="82dp"
+        android:contentDescription="Pet Image"
+        android:src="@drawable/dogYear" />
+
+    <LinearLayout
+        android:id="@+id/bottomCard"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/boxes"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <!--  Card content  -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="How old is your Pet?"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Vaccine_name"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+            android:background="@drawable/textbox"
+            android:padding="12dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButton"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:text="Save"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,271 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--top layer-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Vet_visits"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/parchment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_layer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vet Visits"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp"/>
+    </FrameLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="2">
+    <!--text feild of user info-->
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Select Pet"
+        />
+    <Spinner
+    android:id="@+id/spinner_category"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="center"
+    android:background="@drawable/textbox"
+    android:padding="8dp"/>
+
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Date Of Visit"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/DateOfVisit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="datetime"
+        android:background="@drawable/textbox"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Vet Name "
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/VetName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="text"
+        android:background="@drawable/textbox"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Vaccination Name"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/VaccinationName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="text"
+        android:background="@drawable/textbox"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Reason For Visit"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ReasonForVisit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/textbox"
+        android:inputType="text"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Diagnosis"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/VeterinarianName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="text"
+        android:background="@drawable/textbox"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Treatment "
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Treatment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="text"
+        android:background="@drawable/textbox"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Follow Up Appointment Date"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/FollowUpAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="datetime"
+        android:background="@drawable/textbox"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="40dp"
+            android:id="@+id/savebtn"
+            android:textColor="@color/white"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:background="@drawable/buttons"/>
+    </LinearLayout>
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_nav">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/profilebtn"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/profile">
+                </ImageButton>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageButton
+                    android:layout_weight="2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/home"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/home">
+                </ImageButton>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/settings"
+                    android:contextClickable="true"></ImageButton>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

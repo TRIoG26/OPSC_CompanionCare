@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Beige">#BC9F7D</color>
+    <color name="parchment">#D5C5B4</color>
+    <color name="bleach_almond">#FFE9D1</color>
+    <color name="dark_momderate_orange">#7A5137</color>
+</resources>

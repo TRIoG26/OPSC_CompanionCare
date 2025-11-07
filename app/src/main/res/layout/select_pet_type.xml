@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/parchment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_layer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diet Tracking"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/contentScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="190dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!--  Title  -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/boxes"
+            android:padding="12dp"
+            android:text="Select the type of pet below"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!--  Pet Grid  -->
+        <GridLayout
+            android:id="@+id/petGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:useDefaultMargins="true">
+            <!--  Dog  -->
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/boxes"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnDog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:background="@color/Beige"
+                    android:contentDescription="Dog"
+                    android:src="@drawable/dog" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Dog"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--  Cat  -->
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/boxes"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:background="@color/Beige"
+                    android:contentDescription="Cat"
+                    android:src="@drawable/cat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Cat"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--  Rabbit  -->
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/boxes"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnRabbit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:background="@color/Beige"
+                    android:contentDescription="Rabbit"
+                    android:src="@drawable/rabbit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Rabbit"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--  Fish  -->
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/boxes"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnFish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:background="@color/Beige"
+                    android:contentDescription="Fish"
+                    android:src="@drawable/fish" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Fish"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--  Bird  -->
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/boxes"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnBird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:background="@color/Beige"
+                    android:contentDescription="Bird"
+                    android:src="@drawable/bird" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Bird"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--  Hamster  -->
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/boxes"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnHamster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:background="@color/Beige"
+                    android:contentDescription="Hamster"
+                    android:src="@drawable/hamster" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Hamster"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+
+    <!--  Bottom Navigation  -->
+    <FrameLayout
+        android:id="@+id/bottom_nav_container"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true">
+        <!--  Background image  -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottom_nav" />
+        <!--  Nav icons  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/nav_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="Home"
+                android:src="@drawable/profile" />
+
+            <ImageButton
+                android:id="@+id/nav_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="Add"
+                android:src="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/nav_profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="Profile"
+                android:src="@drawable/history" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
