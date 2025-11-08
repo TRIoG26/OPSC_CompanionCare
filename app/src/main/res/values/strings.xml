@@ -67,5 +67,7 @@
     <string name="grooming">Grooming</string>
     <string name="toys">Toys</string>
     <string name="pet_food">Pet Food</string>
+    <string name="journal">Journal</string>
+    <string name="add_pet">Add Pet</string>
 
 </resources>

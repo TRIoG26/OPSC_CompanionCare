@@ -148,7 +148,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:text="@string/health_records"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -290,7 +289,7 @@
             android:background="@drawable/whitebox"
             android:contentDescription="image records"
             android:elevation="4dp"
-            android:src="@drawable/grooming"/>
+            android:src="@drawable/journal"/>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
@@ -300,7 +299,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/grooming"
+                android:text="@string/journal"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -320,7 +319,7 @@
             android:background="@drawable/whitebox"
             android:contentDescription="image records"
             android:elevation="4dp"
-            android:src="@drawable/tennisball"/>
+            android:src="@drawable/index"/>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
@@ -329,8 +328,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:text="Pet Toys"
+                android:text="@string/notes"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -348,7 +346,7 @@
             android:background="@drawable/whitebox"
             android:contentDescription="image records"
             android:elevation="4dp"
-            android:src="@drawable/petfood"/>
+            android:src="@drawable/pets"/>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
@@ -357,7 +355,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pet_food"
+                android:text="@string/add_pet"
                 android:textStyle="bold" />
         </LinearLayout>
 

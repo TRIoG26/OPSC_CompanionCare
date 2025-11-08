@@ -62,4 +62,6 @@
     <string name="grooming">Skoonmaak</string>
     <string name="toys">Speelgoed</string>
     <string name="pet_food">Troeteldierkos</string>
+    <string name="journal">Joernaal</string>
+    <string name="add_pet">Voeg Troeteldier By</string>
 </resources>

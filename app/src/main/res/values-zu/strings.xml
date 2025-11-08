@@ -62,6 +62,8 @@
     <string name="grooming">Ukuzilungisa</string>
     <string name="toys">Amathoyizi</string>
     <string name="pet_food">Ukudla Kwezilwane Ezifuywayo</string>
+    <string name="journal">Iphephabhuku</string>
+    <string name="add_pet">Engeza Isilwane</string>
 
 
 </resources>
