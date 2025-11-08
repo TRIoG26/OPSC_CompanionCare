@@ -26,191 +26,200 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="18dp"/>
     </FrameLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_marginTop="10dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_weight="2">
-    <!--text feild of user info-->
-    <TextView
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Select Pet"
-        />
-    <Spinner
-    android:id="@+id/spinner_category"
-    android:layout_width="match_parent"
-    android:layout_height="48dp"
-    android:layout_gravity="center"
-    android:background="@drawable/textbox"
-    android:padding="8dp"/>
 
-    <TextView
-
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Date Of Visit"
-        />
-    <com.google.android.material.textfield.TextInputLayout
-
-        android:id="@+id/DateOfVisit"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:inputType="datetime"
-        android:background="@drawable/textbox"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:orientation="vertical">
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
-    <TextView
-
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Vet Name "
-        />
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/VetName"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:inputType="text"
-        android:background="@drawable/textbox"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:orientation="vertical">
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Vaccination Name"
-        />
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/VaccinationName"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:inputType="text"
-        android:background="@drawable/textbox"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:orientation="vertical">
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Reason For Visit"
-        />
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ReasonForVisit"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@drawable/textbox"
-        android:inputType="text"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:orientation="vertical">
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Diagnosis"
-        />
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/VeterinarianName"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:inputType="text"
-        android:background="@drawable/textbox"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:orientation="vertical">
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Treatment "
-        />
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/Treatment"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:inputType="text"
-        android:background="@drawable/textbox"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:orientation="vertical">
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Follow Up Appointment Date"
-        />
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/FollowUpAppointment"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:inputType="datetime"
-        android:background="@drawable/textbox"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:orientation="vertical">
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <LinearLayout
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
+        android:fillViewport="true">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_marginTop="40dp"
-            android:id="@+id/savebtn"
-            android:textColor="@color/white"
-            android:layout_width="110dp"
-            android:layout_height="38dp"
-            android:text="Save"
-            android:textAllCaps="false"
-            android:background="@drawable/buttons"/>
-    </LinearLayout>
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <!--text feild of user info-->
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Select Pet"
+                />
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textbox"
+                android:padding="8dp"
+                android:contentDescription="Select pet from list" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Date Of Visit"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/DateOfVisit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="datetime"
+                android:background="@drawable/textbox"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:contentDescription="Enter date of vet visit">
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Vet Name "
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/VetName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="text"
+                android:background="@drawable/textbox"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:contentDescription="Enter veterinarian name">
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Vaccination Name"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/VaccinationName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="text"
+                android:background="@drawable/textbox"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:contentDescription="Enter vaccination name">
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Reason For Visit"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ReasonForVisit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox"
+                android:inputType="text"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:contentDescription="Enter reason for vet visit">
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Diagnosis"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/VeterinarianName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="text"
+                android:background="@drawable/textbox"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:contentDescription="Enter diagnosis from veterinarian">
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Treatment "
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Treatment"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="text"
+                android:background="@drawable/textbox"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:contentDescription="Enter treatment prescribed">
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Follow Up Appointment Date"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/FollowUpAppointment"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="datetime"
+                android:background="@drawable/textbox"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:contentDescription="Enter follow up appointment date">
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/savebtn"
+                    android:textColor="@color/white"
+                    android:layout_width="110dp"
+                    android:layout_height="48dp"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:background="@drawable/buttons"
+                    android:contentDescription="Save vet visit information" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -233,8 +242,9 @@
                     android:layout_height="50dp"
                     android:id="@+id/profilebtn"
                     android:layout_marginStart="30dp"
-                    android:background="@drawable/profile">
-                </ImageButton>
+                    android:background="@drawable/profile"
+                    android:contentDescription="Navigate to profile screen"
+                    android:importantForAccessibility="yes" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -247,15 +257,15 @@
                     android:layout_height="50dp"
                     android:id="@+id/home"
                     android:layout_marginStart="30dp"
-                    android:background="@drawable/home">
-                </ImageButton>
+                    android:background="@drawable/home"
+                    android:contentDescription="Navigate to home screen"
+                    android:importantForAccessibility="yes" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
-
                 <ImageButton
                     android:id="@+id/settings"
                     android:layout_width="wrap_content"
@@ -263,9 +273,10 @@
                     android:layout_marginStart="30dp"
                     android:layout_weight="1"
                     android:background="@drawable/settings"
-                    android:contextClickable="true"></ImageButton>
+                    android:contextClickable="true"
+                    android:contentDescription="Navigate to settings screen"
+                    android:importantForAccessibility="yes" />
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>
-
 </LinearLayout>

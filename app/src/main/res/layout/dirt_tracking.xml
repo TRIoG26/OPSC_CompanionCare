@@ -25,169 +25,191 @@
             android:layout_marginTop="18dp" />
     </FrameLayout>
 
-    <LinearLayout
-        android:layout_weight="1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_gravity="center">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Select pet"
-            android:textStyle="normal"
-            android:textColor="@color/black" />
-
-        <Spinner
-            android:id="@+id/spinner_category"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:background="@drawable/textbox"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:text="Food Type" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Vaccine_name"
-            android:layout_width="match_parent"
-            android:inputType="text"
-            android:layout_height="48dp"
-            android:textColor="@color/black"
-            android:background="@drawable/textbox" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:text="Brand/ product name" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/date_given"
-            android:inputType="datetime"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/textbox" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="Portion size" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Next_due_date"
-            android:layout_width="match_parent"
-            android:inputType="datetime"
-            android:layout_height="48dp"
-            android:background="@drawable/textbox" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="Feeding times per day" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Vet_name"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/textbox" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Special diet instructions"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/black" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/veterinarian_Name"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:textColor="@color/black"
-            android:background="@drawable/textbox" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Start Date"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/black" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/start_date"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:textColor="@color/black"
-            android:background="@drawable/textbox" />
-
-        <TextView
-            android:layout_marginTop="8dp"
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:text="End Date" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/End_date"
-            android:layout_width="match_parent"
-            android:textColor="@color/black"
-            android:layout_height="48dp"
-            android:background="@drawable/textbox" />
-    </LinearLayout>
-
-    <LinearLayout
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_marginEnd="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Cancelbtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:elevation="4dp"
-                android:layout_marginEnd="20dp"
-                android:text="Cancel"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:background="@drawable/boxes" />
+        android:fillViewport="true">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/savebtn"
-                android:textColor="@color/white"
-                android:text="Save"
-                android:textAllCaps="false"
-                android:layout_marginStart="20dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center">
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/buttons" />
+                android:text="Select pet"
+                android:textStyle="normal"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textbox"
+                android:padding="8dp"
+                android:contentDescription="Select pet from list" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Food Type" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Vaccine_name"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="48dp"
+                android:textColor="@color/black"
+                android:background="@drawable/textbox"
+                android:hint="Enter food type"
+                android:contentDescription="Enter type of food for your pet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Brand/ product name" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date_given"
+                android:inputType="datetime"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox"
+                android:hint="Enter brand or product name"
+                android:contentDescription="Enter brand or product name of the food" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Portion size" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Next_due_date"
+                android:layout_width="match_parent"
+                android:inputType="datetime"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox"
+                android:hint="Enter portion size"
+                android:contentDescription="Enter portion size for each feeding" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Feeding times per day" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Vet_name"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox"
+                android:hint="Enter number of feeding times"
+                android:contentDescription="Enter number of times to feed per day" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special diet instructions"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/veterinarian_Name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/black"
+                android:background="@drawable/textbox"
+                android:hint="Enter special diet instructions"
+                android:contentDescription="Enter any special diet instructions" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/start_date"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/black"
+                android:background="@drawable/textbox"
+                android:hint="Enter start date"
+                android:contentDescription="Enter diet start date" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="End Date" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/End_date"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox"
+                android:hint="Enter end date"
+                android:contentDescription="Enter diet end date" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Cancelbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:background="@drawable/boxes"
+                        android:contentDescription="Cancel diet tracking form" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/savebtn"
+                        android:textColor="@color/white"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttons"
+                        android:contentDescription="Save diet tracking information" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bottom_nav">
 
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -206,9 +228,10 @@
                     android:layout_height="50dp"
                     android:id="@+id/profilebtn"
                     android:layout_marginStart="30dp"
-                    android:background="@drawable/profile">
+                    android:background="@drawable/profile"
+                    android:contentDescription="Navigate to profile screen"
+                    android:importantForAccessibility="yes" />
 
-                </ImageButton>
             </LinearLayout>
 
             <LinearLayout
@@ -223,7 +246,9 @@
                     android:layout_height="50dp"
                     android:id="@+id/home"
                     android:layout_marginStart="30dp"
-                    android:background="@drawable/home"></ImageButton>
+                    android:background="@drawable/home"
+                    android:contentDescription="Navigate to home screen"
+                    android:importantForAccessibility="yes" />
             </LinearLayout>
 
             <LinearLayout
@@ -239,7 +264,9 @@
                     android:layout_height="50dp"
                     android:id="@+id/history"
                     android:layout_marginStart="30dp"
-                    android:background="@drawable/settings"></ImageButton>
+                    android:background="@drawable/settings"
+                    android:contentDescription="Navigate to history screen"
+                    android:importantForAccessibility="yes" />
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>

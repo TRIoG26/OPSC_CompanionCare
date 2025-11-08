@@ -208,7 +208,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:text="@string/vet_visits "
+                    android:text="@string/vet_visits"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -381,6 +381,7 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <ImageButton
+                    android:contentDescription="profilebtn"
                     android:layout_weight="1"
                     android:layout_width="50dp"
                     android:layout_height="0dp"
@@ -395,6 +396,7 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <ImageButton
+                    android:contentDescription="hombtn"
                     android:layout_weight="2"
                     android:layout_width="50dp"
                     android:layout_height="0dp"
@@ -409,6 +411,7 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <ImageButton
+                    android:contentDescription="settingbtn"
                     android:contextClickable="true"
                     android:layout_weight="1"
                     android:layout_width="50dp"

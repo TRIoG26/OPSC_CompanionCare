@@ -5,12 +5,15 @@
     android:layout_height="match_parent"
     android:background="@color/parchment">
     <ImageView
+        android:layout_marginTop="40dp"
+        android:paddingTop="40dp"
         android:id="@+id/petImageView"
         android:layout_width="match_parent"
+        android:layout_weight="1"
         android:layout_height="610dp"
         android:layout_marginBottom="82dp"
         android:contentDescription="Pet Image"
-        android:src="@drawable/dogBreed" />
+        android:src="@drawable/breed" />
 
     <LinearLayout
         android:id="@+id/bottomCard"
@@ -31,6 +34,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Vaccine_name"
+            android:hint="Enter Pet Breed"
             android:layout_width="match_parent"
             android:inputType="text"
             android:layout_height="48dp"

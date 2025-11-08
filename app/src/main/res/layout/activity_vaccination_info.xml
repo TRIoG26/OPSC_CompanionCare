@@ -1,17 +1,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:id="@+id/main"
-    tools:context=".Vaccination_info"
-    android:background="@color/parchment">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/parchment"
+    tools:context=".Vaccination_info">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/top_layer">
+        android:background="@drawable/top_layer"
+        android:paddingEnd="20dp"
+        android:paddingTop="18dp"
+        android:paddingRight="20dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -20,221 +23,227 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_gravity="end"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="18dp" />
+            android:layout_gravity="end" />
     </FrameLayout>
 
-    <LinearLayout
-        android:layout_weight="1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_gravity="center">
-
-        <TextView
-            android:layout_marginBottom="60dp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:textSize="16sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="Manage Pet's health make a vaccination record" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Select pet"
-            android:textStyle="normal"
-            android:textColor="@color/black" />
-
-        <Spinner
-            android:id="@+id/spinner_category"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:background="@drawable/textbox"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:text="Vaccination Name" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Vaccine_name"
-            android:layout_width="match_parent"
-            android:inputType="text"
-            android:layout_height="48dp"
-            android:textColor="@color/black"
-            android:background="@drawable/textbox" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:text="Date Given" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/date_given"
-            android:inputType="datetime"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/textbox" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="Next Due Date" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Next_due_date"
-            android:layout_width="match_parent"
-            android:inputType="datetime"
-            android:layout_height="48dp"
-            android:background="@drawable/textbox" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="Vet Name" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Vet_name"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/textbox" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Veterinarian Name"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/black" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/veterinarian_Name"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:textColor="@color/black"
-            android:background="@drawable/textbox" />
-
-        <TextView
-            android:layout_marginTop="8dp"
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:text="Notes" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Vac_note"
-            android:layout_width="match_parent"
-            android:textColor="@color/black"
-            android:layout_height="90dp"
-            android:background="@drawable/textbox" />
-
-
-
-    </LinearLayout>
-    <LinearLayout
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_marginEnd="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Cancelbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="4dp"
-            android:layout_marginEnd="20dp"
-            android:text="Cancel"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:background="@drawable/boxes" />
+        android:fillViewport="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/savebtn"
-            android:textColor="@color/white"
-            android:text="Save"
-            android:textAllCaps="false"
-            android:layout_marginStart="20dp"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/buttons" />
+            android:orientation="vertical">
+
+            <!-- Re-add missing TextViews and original content -->
+
+            <TextView
+                android:layout_marginBottom="60dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage Pet's health make a vaccination record" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select pet"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox"
+                android:padding="8dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Vaccination Name" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Vaccine_name"
+                android:hint="Enter Vaccination Name"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Date Given" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date_given"
+                android:hint="Enter Date Given"
+                android:inputType="datetime"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Next Due Date" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Next_due_date"
+                android:hint="Enter Due Date"
+                android:layout_width="match_parent"
+                android:inputType="datetime"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Vet Name" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Vet_name"
+                android:hint="Enter Vet Name"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox"
+                android:layout_marginBottom="20dp" />
+
+            <!-- This TextView for "Veterinarian Name" was missing, added back -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veterinarian Name"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/veterinarian_Name"
+                android:hint="Enter Veterinarian Name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/black"
+                android:background="@drawable/textbox"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Notes" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Vac_note"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="90dp"
+                android:hint="Write down your idea"
+                android:background="@drawable/textbox"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Cancelbtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:background="@drawable/boxes"
+                    android:layout_marginEnd="10dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/savebtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:background="@drawable/buttons"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
+
     <FrameLayout
+        android:id="@+id/bottom_nav_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bottom_nav">
-
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true">
+        <!--  Background image  -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottom_nav" />
+        <!--  Nav icons  -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
             android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:layout_marginTop="12dp">
+            android:weightSum="3">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/nav_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="Home"
+                android:src="@drawable/profile" />
 
-                <ImageButton
-                    android:layout_weight="1"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/profilebtn"
-                    android:layout_marginStart="30dp"
-                    android:background="@drawable/profile"></ImageButton>
-            </LinearLayout>
+            <ImageButton
+                android:id="@+id/nav_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="Add"
+                android:src="@drawable/home" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-
-                <ImageButton
-                    android:layout_weight="2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/home"
-                    android:layout_marginStart="30dp"
-                    android:background="@drawable/home"></ImageButton>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-
-                <ImageButton
-                    android:contextClickable="true"
-                    android:layout_weight="1"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/history"
-                    android:layout_marginStart="30dp"
-                    android:background="@drawable/settings"></ImageButton>
-            </LinearLayout>
+            <ImageButton
+                android:id="@+id/nav_profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="Profile"
+                android:src="@drawable/history" />
         </LinearLayout>
     </FrameLayout>
+
 </LinearLayout>

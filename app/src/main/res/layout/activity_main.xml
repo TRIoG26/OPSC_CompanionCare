@@ -17,6 +17,7 @@
         android:paddingBottom="30dp"
         >
         <ImageView
+            android:contentDescription="mapicon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/location_bg"
@@ -27,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/location_icon"
+            android:contentDescription="mapicon"
             android:layout_gravity="center"
             android:layout_marginBottom="40dp"
             />
@@ -39,7 +41,7 @@
         android:layout_marginRight="16dp"
         android:text="For easier navigation select one of the options to continue navigating the app"
         android:textAlignment="center"
-        android:textSize="12dp"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
     <LinearLayout

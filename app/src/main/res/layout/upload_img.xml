@@ -11,7 +11,7 @@
         android:layout_height="610dp"
         android:layout_marginBottom="82dp"
         android:contentDescription="Pet Image"
-        android:src="@drawable/addImg" />
+        android:src="@drawable/addImg"/>
 
     <LinearLayout
         android:id="@+id/bottomCard"
@@ -37,6 +37,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/Vaccine_name"
+                android:hint="Image Name"
                 android:layout_width="300dp"
                 android:inputType="text"
                 android:layout_height="48dp"
