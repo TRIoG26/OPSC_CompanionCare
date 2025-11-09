@@ -242,7 +242,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:contentDescription="Profile"
-                android:src="@drawable/history" />
+                android:src="@drawable/settings" />
         </LinearLayout>
     </FrameLayout>
 

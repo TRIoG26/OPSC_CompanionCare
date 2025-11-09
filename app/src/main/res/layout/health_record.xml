@@ -57,7 +57,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/Weight"
-                android:hint="Enter Weight"
+                android:hint="Enter Weights"
                 android:layout_width="match_parent"
                 android:inputType="text"
                 android:layout_height="48dp"

@@ -22,6 +22,14 @@
             android:layout_marginTop="18dp" />
     </FrameLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
     <LinearLayout
         android:id="@+id/contentScroll"
         android:layout_width="match_parent"
@@ -29,6 +37,8 @@
         android:layout_marginBottom="190dp"
         android:orientation="vertical"
         android:padding="16dp">
+
+
 
         <!--  Title  -->
         <TextView
@@ -203,7 +213,9 @@
                     android:textStyle="bold" />
             </LinearLayout>
         </GridLayout>
+
     </LinearLayout>
+</ScrollView>
 
     <!--  Bottom Navigation  -->
     <FrameLayout

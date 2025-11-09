@@ -56,12 +56,12 @@
                 android:layout_marginBottom="60dp"
                 android:text="edit profile"
                 android:layout_gravity="center"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Username"
+                android:text="Pet Name"
                 android:inputType="text"
                 android:textColor="@color/black"
                 android:textSize="16dp"
@@ -87,7 +87,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:textStyle="bold"
-                android:text="Language"/>
+                android:text="Animal"/>
 
             <Spinner
                 android:id="@+id/spinner_category"
@@ -99,14 +99,14 @@
                 android:contentDescription="Select language" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="32dp"
                 android:layout_height="wrap_content"
-                android:text="Email"
-                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:text="Age"
+                android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"/>
+                android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/email"
@@ -117,8 +117,8 @@
                 android:textSize="14sp"
                 android:layout_height="48dp"
                 android:background="@drawable/textbox"
-                android:Description="Enter your email"
-                android:hint="Enter email address" />
+                android:Description="Enter Pet Age"
+                android:hint="Enter Pet Age" />
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -128,7 +128,7 @@
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone number"/>
+                android:text="Status"/>
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/phone"
@@ -139,8 +139,8 @@
                 android:textSize="14sp"
                 android:layout_height="48dp"
                 android:background="@drawable/textbox"
-                android:Description="Enter your phone number"
-                android:hint="Enter phone number" />
+                android:Description="Sick / Injured / Healthy"
+                android:hint="Sick / Injured / Healthy" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/savebtn"
